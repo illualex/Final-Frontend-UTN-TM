@@ -1,10 +1,14 @@
 import React from "react";
+import Navbar from "../components/Navbar"; // Importa el Navbar si lo estás usando
 import ImageCarousel from "../components/ImageCarousel"; // Ajusta la ruta según sea necesario
 
 const HomePage = () => {
   return (
     <>
-      <header></header>
+      <header>
+        <Navbar />
+        {/* Agrega el Navbar si deseas que esté en todas las páginas */}
+      </header>
       <main>
         <ImageCarousel />
         {/* Otros componentes de la página */}
