@@ -9,15 +9,16 @@ Currently, two official plugins are available:
 
 
 -------- Descripción --------
-Proyecto: Creación de una pagina E-commerce venta de hardware y cosas geeks.
+- Proyecto: Creación de una pagina E-commerce venta de hardware y cosas geeks.
+- Descripción: Para el armado de la pagina e-commerce use de ejemplo otras paginas similares, tambien use el metodo Desktop First para la creacion.
 
-Dependencias usadas:
+- Dependencias usadas:
     _ gh-pages (Usado para el Hosting en Github Pages)
     _ react-router-dom
     _ react icons
     _ swiper (Para la creación de un Slider)
 
-Dificultades:
+- Dificultades:
     _ Colocar Varios puntos de interrupción para adaptar progresivamente las vistas en celular(320px a 425px), tablet(426px a 768px), laptop(769px a 1024px), pantalla grande(1025px a 1440px) y pantalla ultra grande(1441px a mas).
     _ Creación y adaptación responsive del menu a menu hamburguesa para las medidas 320px a 480px.
 

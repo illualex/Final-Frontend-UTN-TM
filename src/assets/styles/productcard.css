@@ -1,0 +1,101 @@
+/* src/assets/styles/ProductCard.css */
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  text-align: center;
+  width: 100%; /* Ancho flexible */
+  max-width: 350px; /* Ancho máximo */
+  height: auto; /* Altura automática */
+  /* Opcional: Mantener una relación de aspecto consistente */
+  margin: 0 auto; /* Centra la tarjeta en su contenedor */
+}
+
+.product-image {
+  width: 100%;
+  height: 60%; /* Ajusta según sea necesario */
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product-title {
+  font-size: 1rem; /* Ajustado para ser más flexible */
+  margin: 0;
+}
+
+.product-price {
+  color: #ff8c00; /* O el color de tu preferencia */
+  font-size: 1rem; /* Ajustado para ser más flexible */
+  margin: 0;
+  margin-bottom: 10px; /* Espacio entre precio y botón */
+}
+
+/* Estilos para el botón */
+.add-to-cart-button {
+  background-color: #ff8c00; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem; /* Ajustado para ser más flexible */
+  cursor: pointer;
+}
+
+.add-to-cart-button:hover {
+  background-color: #e07b00; /* Color de fondo del botón al pasar el mouse */
+}
+
+/* Breakpoints para hacer la tarjeta responsive */
+@media (max-width: 425px) {
+  .product-title {
+    font-size: 0.9rem; /* Ajuste para pantallas más pequeñas */
+  }
+
+  .product-price {
+    font-size: 0.9rem; /* Ajuste para pantallas más pequeñas */
+  }
+
+  .add-to-cart-button {
+    font-size: 0.9rem; /* Ajuste para pantallas más pequeñas */
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .product-title {
+    font-size: 1rem; /* Ajuste para tablets */
+  }
+
+  .product-price {
+    font-size: 1rem; /* Ajuste para tablets */
+  }
+
+  .add-to-cart-button {
+    font-size: 1rem; /* Ajuste para tablets */
+  }
+}
+
+@media (min-width: 769px) {
+  .product-title {
+    font-size: 1.2rem; /* Ajuste para pantallas de laptop y mayores */
+  }
+
+  .product-price {
+    font-size: 1.1rem; /* Ajuste para pantallas de laptop y mayores */
+  }
+
+  .add-to-cart-button {
+    font-size: 1.1rem; /* Ajuste para pantallas de laptop y mayores */
+  }
+}

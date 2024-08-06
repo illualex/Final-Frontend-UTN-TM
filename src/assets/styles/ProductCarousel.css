@@ -1,0 +1,52 @@
+/* src/assets/styles/productcarousel.css */
+.swiper {
+  width: 100%;
+  height: auto; /* Ajusta la altura para ser flexible */
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide .product-card {
+  max-width: 100%; /* Ancho máximo flexible */
+  box-sizing: border-box; /* Incluye el padding y el border en el ancho */
+}
+
+/* Opcional: Ajustar la altura del contenedor del carrusel */
+.swiper-container {
+  height: auto; /* Ajusta la altura automáticamente según el contenido */
+}
+
+/* Media queries para ajustar el carrusel en diferentes tamaños de pantalla */
+@media (max-width: 425px) {
+  .swiper-slide .product-card {
+    width: 90%; /* Ajuste para pantallas pequeñas */
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .swiper-slide .product-card {
+    width: 80%; /* Ajuste para tablets */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .swiper-slide .product-card {
+    width: 85%; /* Ajuste para laptops */
+  }
+}
+
+@media (min-width: 1025px) {
+  .swiper-slide .product-card {
+    width: 90%; /* Ajuste para pantallas grandes */
+  }
+}
+
+@media (min-width: 1441px) {
+  .swiper-slide .product-card {
+    width: 100%; /* Ajuste para pantallas ultra grandes */
+  }
+}
