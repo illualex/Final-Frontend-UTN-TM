@@ -6,7 +6,7 @@ import ProductDetailPage from "./pages/ProductDetailPage";
 
 const App = () => {
   return (
-    <Router basename="/Final-Frontend-UTN-TM">
+    <Router >
       {/* Base URL para GitHub Pages */}
       <Routes>
         <Route path="/" element={<HomePage />} />
