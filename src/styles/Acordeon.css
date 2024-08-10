@@ -1,0 +1,115 @@
+/* Acordeon.css */
+
+p {
+  padding: 1rem 0;
+}
+
+.accordion-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.accordion-item h2 {
+  background-color: #f4f4f4;
+  cursor: pointer;
+  margin: 0;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  user-select: none;
+}
+
+.accordion-item.open h2 {
+  background-color: #e0e0e0;
+}
+
+.accordion-content {
+  padding: 0 1rem;
+  background-color: #fff;
+  overflow: hidden;
+  max-height: 0; /* Inicialmente oculto */
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  display: flex; /* Para centrar el contenido si es necesario */
+  flex-direction: column;
+}
+
+.accordion-item.open .accordion-content {
+  max-height: 1000px; /* Ajusta según el contenido */
+  padding: 1rem; /* Asegura que el padding se aplique solo cuando esté abierto */
+}
+
+.accordion-content p,
+.accordion-content ul,
+.accordion-content ol {
+  margin: 0 0 1rem 0;
+}
+
+.accordion-content ul,
+.accordion-content ol {
+  padding-left: 2rem;
+}
+
+/* Media Queries */
+
+/* Móviles (320px a 425px) */
+@media (max-width: 425px) {
+  .accordion-content {
+    max-height: 500px; /* Ajusta el valor según la altura del contenido */
+  }
+
+  .accordion-item h2 {
+    font-size: 1rem; /* Ajusta el tamaño de fuente en móviles */
+    padding: 0.75rem;
+  }
+}
+
+/* Tablets (426px a 768px) */
+@media (min-width: 426px) and (max-width: 768px) {
+  .accordion-content {
+    max-height: 700px; /* Ajusta el valor según la altura del contenido */
+  }
+
+  .accordion-item h2 {
+    font-size: 1.1rem; /* Ajusta el tamaño de fuente en tablets */
+    padding: 0.75rem;
+  }
+}
+
+/* Laptops (769px a 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .accordion-content {
+    max-height: 900px; /* Ajusta el valor según la altura del contenido */
+  }
+
+  .accordion-item h2 {
+    font-size: 1.2rem; /* Ajusta el tamaño de fuente en laptops */
+    padding: 1rem;
+  }
+}
+
+/* Pantallas Grandes (1025px a 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .accordion-content {
+    max-height: 1000px; /* Ajusta el valor según la altura del contenido */
+  }
+
+  .accordion-item h2 {
+    font-size: 1.3rem; /* Ajusta el tamaño de fuente en pantallas grandes */
+    padding: 1rem;
+  }
+}
+
+/* Pantallas Ultra Grandes (1441px en adelante) */
+@media (min-width: 1441px) {
+  .accordion-content {
+    max-height: 1200px; /* Ajusta el valor según la altura del contenido */
+  }
+
+  .accordion-item h2 {
+    font-size: 1.4rem; /* Ajusta el tamaño de fuente en pantallas ultra grandes */
+    padding: 1rem;
+  }
+}

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../assets/styles/navbar.css'; // Asegúrate de que la ruta sea correcta
+import '../styles/Navbar.css'; // Asegúrate de que la ruta sea correcta
 import logo from '../assets/images/logo/titulo3.png'; // Ruta al logo
 import { FaMagnifyingGlass, FaCartPlus, FaUserLarge, FaBars, FaBarsStaggered } from "react-icons/fa6";
 
@@ -31,7 +31,8 @@ const Navbar = () => {
         {/* Iconos de navegación (carrito y login) */}
         <div className={`navbar-icons ${isMenuOpen ? 'active' : ''}`}>
           <button className="btn-cart"><FaCartPlus /></button>
-          <button className="btn-login"><FaUserLarge /> Iniciar sesión</button>
+          {/* <button className="btn-login"><FaUserLarge /> Iniciar sesión</button> */}
+          <Link to="/signup" className='btn-login'><FaUserLarge />&nbsp;Iniciar sesión</Link>
         </div>
       </div>
 

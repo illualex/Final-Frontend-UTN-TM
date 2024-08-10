@@ -1,0 +1,98 @@
+ejecutar pagina local:
+npm run dev
+
+subir cambios:
+git add [archivo]
+git commit -m "Comentario"
+git push -u origin main
+
+ejecutar cambios de github pages: (después de cada push)
+npm run build
+npm run deploy
+
+url de pagina subida a github pages:
+https://illualex.github.io/Final-Frontend-UTN-TM/
+
+
+testear imagenes:
+https://placehold.co/1920x1080?text=Slider
+https://placehold.co/600x600?text=Producto
+
+_ Imagen de la Lista de Productos (Vista de Mosaico o Miniatura):
+Resolución recomendada: 300x300 píxeles a 600x600 píxeles.
+Formato: WebP o JPEG.
+Tamaño del archivo: Idealmente, entre 50 KB y 150 KB.
+
+_ Imagen del Detalle del Producto (Vista Ampliada o Página del Producto):
+Resolución recomendada: 800x800 píxeles a 1200x1200 píxeles.
+Formato: WebP o JPEG.
+Tamaño del archivo: Idealmente, entre 150 KB y 300 KB.
+
+_ Imágenes en Carruseles o Sliders:
+Resolución recomendada: 1200x800 píxeles a 1920x1080 píxeles.
+Formato: WebP para compresión eficiente y calidad visual.
+Tamaño del archivo: Idealmente, entre 200 KB y 500 KB.
+
+azul: #03071E
+rojo: #d00000
+
+
+Explicación de Media Queries
+320px a 425px: Moviles
+426px a 768px: Tablet
+769px a 1024px: Laptop
+1025px a 1440px: Pantallas Grandes
+1441px a mas: Pantallas Ultra Grandes
+
+my-react-vite-project/
+│
+├── public/
+│   ├── data/
+│   │   └── products.json
+│   └── favicon/
+│
+├── src/
+│   ├── assets/
+│   │   └── images/
+│   │
+│   ├── styles/
+│   │   ├── main.css
+│   │   ├── CustomPage.css
+│   │   ├── Footer.css
+│   │   ├── HelpPage.css
+│   │   ├── ImageCarousel.css
+│   │   ├── Navbar.css
+│   │   ├── productcard.css
+│   │   ├── ProductCarousel.css
+│   │   ├── ProductsPage.css
+│   │   └── SignUpPage.css
+│   │
+│   ├── components/
+│   │   ├── Footer.jsx
+│   │   ├── ImageCarousel.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── ProductCard.jsx
+│   │   ├── ProductCarousel.jsx
+│   │   └── ProductsList.jsx
+│   │
+│   ├── hooks/
+│   │   ├── useFetch.js
+│   │   └── useFilter.js
+│   │
+│   ├── pages/
+│   │   ├── CustomPage.jsx
+│   │   ├── HelpPage.jsx
+│   │   ├── HomePage.jsx
+│   │   ├── ProductDetailPage.jsx
+│   │   ├── ProductsPage.jsx
+│   │   └── SignUpPage.jsx
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│
+├── .gitignore
+├── package.json
+├── index.html
+├── README.md
+├── vite.config.js
+└── package-lock.json

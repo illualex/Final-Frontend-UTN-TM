@@ -1,0 +1,118 @@
+/* HelpForm.css */
+
+.help-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #ffffff; /* Fondo blanco para un estilo limpio */
+  border-radius: 12px; /* Bordes más redondeados */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+  border: 1px solid #ddd; /* Borde sutil alrededor del formulario */
+  font-family: Arial, sans-serif;
+}
+
+.help-form label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.help-form input,
+.help-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 12px; /* Bordes redondeados en los campos de entrada */
+  box-sizing: border-box;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease; /* Transición suave para el borde */
+}
+
+.help-form input[type="file"] {
+  padding: 0;
+  border: 1px solid #ddd; /* Añade un borde para mantener la consistencia */
+  background: #fff;
+  border-radius: 0; /* Sin bordes redondeados en el campo de archivo */
+}
+
+.help-form input:focus,
+.help-form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.help-form .error {
+  color: #e74c3c;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+.help-form .success {
+  color: #2ecc71;
+  font-size: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.help-form button {
+  background-color: #000; /* Fondo negro por defecto */
+  color: #fff; /* Texto blanco */
+  padding: 0.75rem 1.5rem;
+  border: 2px solid transparent; /* Borde inicial transparente */
+  border-radius: 12px; /* Bordes redondeados en el botón */
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease; /* Transiciones suaves */
+}
+
+.help-form button:hover {
+  background-color: #fff; /* Fondo blanco al pasar el cursor */
+  color: #000; /* Texto negro al pasar el cursor */
+  border-color: #000; /* Borde negro al pasar el cursor */
+}
+
+/* Media Queries */
+
+@media (max-width: 425px) {
+  .help-form {
+    padding: 1rem;
+  }
+
+  .help-form button {
+    width: 100%;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .help-form {
+    padding: 1.5rem;
+  }
+
+  .help-form button {
+    width: auto;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .help-form {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .help-form {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 1441px) {
+  .help-form {
+    max-width: 800px; /* Ajusta el ancho máximo en pantallas ultra grandes */
+    padding: 2.5rem;
+  }
+}

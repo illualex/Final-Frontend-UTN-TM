@@ -1,6 +1,6 @@
 // src/components/ProductCard.jsx
 import React from "react";
-import "../assets/styles/productcard.css"; // Asegúrate de que el CSS esté en la ubicación correcta
+import "../styles/ProductCard.css"; // Asegúrate de que el CSS esté en la ubicación correcta
 
 const ProductCard = ({ image, title, price }) => {
   return (

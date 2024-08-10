@@ -1,5 +1,3 @@
-// src/components/ImageCarousel.jsx
-
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
@@ -9,9 +7,12 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
+import "../styles/ImageCarousel.css";
+
 const ImageCarousel = () => {
   return (
     <Swiper
+      className="custom-swiper"
       modules={[Navigation, Pagination, Autoplay]}
       spaceBetween={10}
       slidesPerView={1}
@@ -46,14 +47,14 @@ const ImageCarousel = () => {
       <SwiperSlide>
         <img
           src="https://placehold.co/1920x1080?text=Slider-4"
-          alt="Slide 1"
+          alt="Slide 4"
           style={{ width: "100%", height: "auto" }}
         />
       </SwiperSlide>
       <SwiperSlide>
         <img
           src="https://placehold.co/1920x1080?text=Slider-5"
-          alt="Slide 1"
+          alt="Slide 5"
           style={{ width: "100%", height: "auto" }}
         />
       </SwiperSlide>

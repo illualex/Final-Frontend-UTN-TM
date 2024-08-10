@@ -2,10 +2,10 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import ProductCard from "./ProductCard";
 import useFetch from "../hooks/useFetch"; // Importa el hook
-import "../assets/styles/ProductCarousel.css";
+import "../styles/ProductCarousel.css";
 
 const ProductCarousel = () => {
   const { data: products, loading, error } = useFetch("data/products.json");
@@ -15,7 +15,8 @@ const ProductCarousel = () => {
 
   return (
     <Swiper
-      modules={[Navigation]}
+      className="product-carousel"
+      modules={[Navigation, Autoplay]}
       spaceBetween={20}
       breakpoints={{
         320: { slidesPerView: 1, spaceBetween: 10 },
@@ -25,6 +26,7 @@ const ProductCarousel = () => {
         1441: { slidesPerView: 5, spaceBetween: 50 },
       }}
       navigation
+      autoplay={{ delay: 10000 }}
       loop
     >
       {products.map((product) => (

@@ -1,0 +1,93 @@
+/* HelpPage.css */
+
+h1 {
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+li,
+p {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.help-page {
+  padding: 1rem;
+  margin: 1rem 5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column; /* Organiza los elementos en una columna */
+  justify-content: center; /* Centra el formulario verticalmente dentro del contenedor */
+  align-items: center;
+}
+
+/* Media Queries */
+
+/* Móviles (320px a 425px) */
+@media (max-width: 425px) {
+  .help-page {
+    margin: 1rem; /* Menor margen en móviles para aprovechar mejor el espacio */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Tamaño de fuente más pequeño en móviles */
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+  }
+}
+
+/* Tablets (426px a 768px) */
+@media (min-width: 426px) and (max-width: 768px) {
+  .help-page {
+    margin: 1rem 2rem; /* Ajuste del margen en tablets */
+  }
+
+  h1 {
+    font-size: 1.75rem; /* Tamaño de fuente adecuado para tablets */
+    padding: 0.75rem;
+    margin: 0.75rem 0;
+  }
+}
+
+/* Laptops (769px a 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .help-page {
+    margin: 1rem 3rem; /* Margen mayor en laptops */
+  }
+
+  h1 {
+    font-size: 2rem; /* Tamaño de fuente estándar en laptops */
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+}
+
+/* Pantallas Grandes (1025px a 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .help-page {
+    margin: 1rem 4rem; /* Margen amplio en pantallas grandes */
+  }
+
+  h1 {
+    font-size: 2.25rem; /* Tamaño de fuente mayor en pantallas grandes */
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+}
+
+/* Pantallas Ultra Grandes (1441px en adelante) */
+@media (min-width: 1441px) {
+  .help-page {
+    margin: 1rem 5rem; /* Margen máximo en pantallas ultra grandes */
+  }
+
+  h1 {
+    font-size: 2.5rem; /* Tamaño de fuente más grande en pantallas ultra grandes */
+    padding: 1.25rem;
+    margin: 1rem 0;
+  }
+}

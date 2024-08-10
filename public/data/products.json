@@ -1,171 +1,191 @@
 [
-    {
-      "id": 1,
-      "name": "Teclado Mecánico RGB",
-      "category": "Hardware",
-      "price": 99.99,
-      "image": "https://placehold.co/600x600?text=Producto",
-      "description": "Teclado mecánico con retroiluminación RGB personalizable y switches mecánicos de alta calidad."
-    },
-    {
-      "id": 2,
-      "name": "Ratón Gaming 16000 DPI",
-      "category": "Hardware",
-      "price": 79.99,
-      "image": "https://placehold.co/600x600?text=Producto",
-      "description": "Ratón gaming con ajuste de DPI hasta 16000 y botones programables para una experiencia de juego óptima."
-    },
-    {
-      "id": 3,
-      "name": "Auriculares Gaming con Micrófono",
-      "category": "Hardware",
-      "price": 119.99,
-      "image": "https://placehold.co/600x600?text=Producto",
-      "description": "Auriculares gaming con sonido envolvente 7.1, micrófono ajustable y almohadillas cómodas para largas sesiones de juego."
-    },
-    {
-      "id": 4,
-      "name": "Figura Funko Pop! Star Wars",
-      "category": "Geek",
-      "price": 14.99,
-      "image": "https://placehold.co/600x600?text=Producto",
-      "description": "Figura coleccionable Funko Pop! de Star Wars, ideal para fans de la saga y coleccionistas."
-    },
-    {
-      "id": 5,
-      "name": "Camiseta de Marvel - Spider-Man",
-      "category": "Geek",
-      "price": 24.99,
-      "image": "https://placehold.co/600x600?text=Producto",
-      "description": "Camiseta de algodón con diseño gráfico de Spider-Man, perfecta para fans del universo Marvel."
-    },
-    {
-      "id": 6,
-      "name": "Mug Harry Potter - Gryffindor",
-      "category": "Geek",
-      "price": 12.99,
-      "image": "https://placehold.co/600x600?text=Producto",
-      "description": "Taza de cerámica con el escudo de Gryffindor, ideal para los seguidores de Harry Potter."
-    },
-    {
-      "id": 7,
-      "name": "Monitor Gaming 27\" 144Hz",
-      "category": "Hardware",
-      "price": 349.99,
-      "image": "https://placehold.co/600x600?text=Producto",
-      "description": "Monitor gaming de 27 pulgadas con frecuencia de actualización de 144Hz y resolución Full HD para una experiencia de juego fluida."
-    },
-    {
-      "id": 8,
-      "name": "Silla Gaming Ergonomica",
-      "category": "Hardware",
-      "price": 199.99,
-      "image": "https://placehold.co/600x600?text=Producto",
-      "description": "Silla gaming ergonómica con ajuste de altura y reposabrazos acolchados, ideal para largas sesiones frente al PC."
-    },
-    {
-      "id": 9,
-      "name": "Alfombrilla de Ratón XXL RGB",
-      "category": "Hardware",
-      "price": 49.99,
-      "image": "https://placehold.co/600x600?text=Producto",
-      "description": "Alfombrilla de ratón XXL con retroiluminación RGB y superficie antideslizante para un mejor control del ratón."
-    },
-    {
-      "id": 10,
-      "name": "Puzzle 1000 piezas - Star Wars",
-      "category": "Geek",
-      "price": 29.99,
-      "image": "https://placehold.co/600x600?text=Producto",
-      "description": "Puzzle de 1000 piezas con temática de Star Wars, perfecto para los fanáticos de la saga que disfrutan de desafíos."
-    },
-    {
-      "id": 11,
-      "name": "Cuaderno de Notas Star Trek",
-      "category": "Geek",
-      "price": 18.99,
-      "image": "https://placehold.co/600x600?text=Producto",
-      "description": "Cuaderno de notas con diseño de Star Trek, ideal para tomar apuntes o como regalo para los fanáticos de la serie."
-    },
-    {
-      "id": 12,
-      "name": "Lampara LED - The Mandalorian",
-      "category": "Geek",
-      "price": 39.99,
-      "image": "https://placehold.co/600x600?text=Producto",
-      "description": "Lámpara LED con diseño de The Mandalorian, que ilumina tu espacio con un toque geek y elegante."
-    },
-    {
-      "id": 13,
-      "name": "Cargador Rápido USB-C",
-      "category": "Hardware",
-      "price": 29.99,
-      "image": "https://placehold.co/600x600?text=Producto",
-      "description": "Cargador rápido USB-C con soporte para carga de alta velocidad y compatibilidad con la mayoría de dispositivos modernos."
-    },
-    {
-      "id": 14,
-      "name": "Estación de Acoplamiento para Laptop",
-      "category": "Hardware",
-      "price": 89.99,
-      "image": "https://placehold.co/600x600?text=Producto",
-      "description": "Estación de acoplamiento para laptop con múltiples puertos USB, HDMI y Ethernet, ideal para configurar un espacio de trabajo completo."
-    },
-    {
-      "id": 15,
-      "name": "Auriculares In-Ear Bluetooth",
-      "category": "Hardware",
-      "price": 59.99,
-      "image": "https://placehold.co/600x600?text=Producto",
-      "description": "Auriculares in-ear Bluetooth con cancelación de ruido y batería de larga duración, perfectos para la movilidad."
-    },
-    {
-      "id": 16,
-      "name": "Figura Funko Pop! Marvel",
-      "category": "Geek",
-      "price": 15.99,
-      "image": "https://placehold.co/600x600?text=Producto",
-      "description": "Figura coleccionable Funko Pop! del universo Marvel, ideal para añadir a tu colección."
-    },
-    {
-      "id": 17,
-      "name": "Alfombra de Juego con Diseño de Zelda",
-      "category": "Geek",
-      "price": 34.99,
-      "image": "https://placehold.co/600x600?text=Producto",
-      "description": "Alfombra de juego con diseño del universo Zelda, cómoda y con un diseño llamativo para los fans."
-    },
-    {
-      "id": 18,
-      "name": "Reloj de Pared Star Wars",
-      "category": "Geek",
-      "price": 45.99,
-      "image": "https://placehold.co/600x600?text=Producto",
-      "description": "Reloj de pared con diseño de Star Wars, ideal para decorar tu habitación o espacio de trabajo."
-    },
-    {
-      "id": 19,
-      "name": "Cable de Datos de Alta Velocidad",
-      "category": "Hardware",
-      "price": 19.99,
-      "image": "https://placehold.co/600x600?text=Producto",
-      "description": "Cable de datos de alta velocidad con conector USB 3.0, ideal para transferencias rápidas y seguras."
-    },
-    {
-      "id": 20,
-      "name": "Agenda de Viaje - Star Trek",
-      "category": "Geek",
-      "price": 22.99,
-      "image": "https://placehold.co/600x600?text=Producto",
-      "description": "Agenda de viaje con diseño de Star Trek, ideal para los fanáticos de la serie que aman organizar sus aventuras."
-    },
-    {
-      "id": 21,
-      "name": "Mochila Gaming con Compartimentos",
-      "category": "Hardware",
-      "price": 129.99,
-      "image": "https://placehold.co/600x600?text=Producto",
-      "description": "Mochila gaming con múltiples compartimentos y acolchado para proteger tus dispositivos y accesorios mientras viajas."
-    }
-  ]
-  
+  {
+    "id": 1,
+    "name": "Teclado Mecánico RGB",
+    "category": "Hardware",
+    "price": 99.99,
+    "image": "https://placehold.co/600x600?text=Producto",
+    "description": "Teclado mecánico con retroiluminación RGB personalizable y switches mecánicos de alta calidad.",
+    "product": "Teclado"
+  },
+  {
+    "id": 2,
+    "name": "Ratón Gaming 16000 DPI",
+    "category": "Hardware",
+    "price": 79.99,
+    "image": "https://placehold.co/600x600?text=Producto",
+    "description": "Ratón gaming con ajuste de DPI hasta 16000 y botones programables para una experiencia de juego óptima.",
+    "product": "Mouse"
+  },
+  {
+    "id": 3,
+    "name": "Auriculares Gaming con Micrófono",
+    "category": "Hardware",
+    "price": 119.99,
+    "image": "https://placehold.co/600x600?text=Producto",
+    "description": "Auriculares gaming con sonido envolvente 7.1, micrófono ajustable y almohadillas cómodas para largas sesiones de juego.",
+    "product": "Auriculares"
+  },
+  {
+    "id": 4,
+    "name": "Figura Funko Pop! Star Wars",
+    "category": "Geek",
+    "price": 14.99,
+    "image": "https://placehold.co/600x600?text=Producto",
+    "description": "Figura coleccionable Funko Pop! de Star Wars, ideal para fans de la saga y coleccionistas.",
+    "product": "Figuras"
+  },
+  {
+    "id": 5,
+    "name": "Camiseta de Marvel - Spider-Man",
+    "category": "Geek",
+    "price": 24.99,
+    "image": "https://placehold.co/600x600?text=Producto",
+    "description": "Camiseta de algodón con diseño gráfico de Spider-Man, perfecta para fans del universo Marvel.",
+    "product": "Ropa"
+  },
+  {
+    "id": 6,
+    "name": "Mug Harry Potter - Gryffindor",
+    "category": "Geek",
+    "price": 12.99,
+    "image": "https://placehold.co/600x600?text=Producto",
+    "description": "Taza de cerámica con el escudo de Gryffindor, ideal para los seguidores de Harry Potter.",
+    "product": "Tazas"
+  },
+  {
+    "id": 7,
+    "name": "Monitor Gaming 27\" 144Hz",
+    "category": "Hardware",
+    "price": 349.99,
+    "image": "https://placehold.co/600x600?text=Producto",
+    "description": "Monitor gaming de 27 pulgadas con frecuencia de actualización de 144Hz y resolución Full HD para una experiencia de juego fluida.",
+    "product": "Monitor"
+  },
+  {
+    "id": 8,
+    "name": "Silla Gaming Ergonomica",
+    "category": "Hardware",
+    "price": 199.99,
+    "image": "https://placehold.co/600x600?text=Producto",
+    "description": "Silla gaming ergonómica con ajuste de altura y reposabrazos acolchados, ideal para largas sesiones frente al PC.",
+    "product": "Silla"
+  },
+  {
+    "id": 9,
+    "name": "Alfombrilla de Ratón XXL RGB",
+    "category": "Hardware",
+    "price": 49.99,
+    "image": "https://placehold.co/600x600?text=Producto",
+    "description": "Alfombrilla de ratón XXL con retroiluminación RGB y superficie antideslizante para un mejor control del ratón.",
+    "product": "MousePad"
+  },
+  {
+    "id": 10,
+    "name": "Puzzle 1000 piezas - Star Wars",
+    "category": "Geek",
+    "price": 29.99,
+    "image": "https://placehold.co/600x600?text=Producto",
+    "description": "Puzzle de 1000 piezas con temática de Star Wars, perfecto para los fanáticos de la saga que disfrutan de desafíos.",
+    "product": "Rompecabezas"
+  },
+  {
+    "id": 11,
+    "name": "Cuaderno de Notas Star Trek",
+    "category": "Geek",
+    "price": 18.99,
+    "image": "https://placehold.co/600x600?text=Producto",
+    "description": "Cuaderno de notas con diseño de Star Trek, ideal para tomar apuntes o como regalo para los fanáticos de la serie.",
+    "product": "Cuaderno"
+  },
+  {
+    "id": 12,
+    "name": "Lampara LED - The Mandalorian",
+    "category": "Geek",
+    "price": 39.99,
+    "image": "https://placehold.co/600x600?text=Producto",
+    "description": "Lámpara LED con diseño de The Mandalorian, que ilumina tu espacio con un toque geek y elegante.",
+    "product": "Luces"
+  },
+  {
+    "id": 13,
+    "name": "Cargador Rápido USB-C",
+    "category": "Hardware",
+    "price": 29.99,
+    "image": "https://placehold.co/600x600?text=Producto",
+    "description": "Cargador rápido USB-C con soporte para carga de alta velocidad y compatibilidad con la mayoría de dispositivos modernos.",
+    "product": "Cargadores"
+  },
+  {
+    "id": 14,
+    "name": "Estación de Acoplamiento para Laptop",
+    "category": "Hardware",
+    "price": 89.99,
+    "image": "https://placehold.co/600x600?text=Producto",
+    "description": "Estación de acoplamiento para laptop con múltiples puertos USB, HDMI y Ethernet, ideal para configurar un espacio de trabajo completo.",
+    "product": "Accesorios-Hardware"
+  },
+  {
+    "id": 15,
+    "name": "Auriculares In-Ear Bluetooth",
+    "category": "Hardware",
+    "price": 59.99,
+    "image": "https://placehold.co/600x600?text=Producto",
+    "description": "Auriculares in-ear Bluetooth con cancelación de ruido y batería de larga duración, perfectos para la movilidad.",
+    "product": "Auriculares"
+  },
+  {
+    "id": 16,
+    "name": "Figura Funko Pop! Marvel",
+    "category": "Geek",
+    "price": 15.99,
+    "image": "https://placehold.co/600x600?text=Producto",
+    "description": "Figura coleccionable Funko Pop! del universo Marvel, ideal para añadir a tu colección.",
+    "product": "Figuras"
+  },
+  {
+    "id": 17,
+    "name": "Alfombra de Juego con Diseño de Zelda",
+    "category": "Geek",
+    "price": 34.99,
+    "image": "https://placehold.co/600x600?text=Producto",
+    "description": "Alfombra de juego con diseño del universo Zelda, cómoda y con un diseño llamativo para los fans.",
+    "product": "Alfombra"
+  },
+  {
+    "id": 18,
+    "name": "Reloj de Pared Star Wars",
+    "category": "Geek",
+    "price": 45.99,
+    "image": "https://placehold.co/600x600?text=Producto",
+    "description": "Reloj de pared con diseño de Star Wars, ideal para decorar tu habitación o espacio de trabajo.",
+    "product": "Reloj"
+  },
+  {
+    "id": 19,
+    "name": "Cable de Datos de Alta Velocidad",
+    "category": "Hardware",
+    "price": 19.99,
+    "image": "https://placehold.co/600x600?text=Producto",
+    "description": "Cable de datos de alta velocidad con conector USB 3.0, ideal para transferencias rápidas y seguras.",
+    "product": "Cables"
+  },
+  {
+    "id": 20,
+    "name": "Agenda de Viaje - Star Trek",
+    "category": "Geek",
+    "price": 22.99,
+    "image": "https://placehold.co/600x600?text=Producto",
+    "description": "Agenda de viaje con diseño de Star Trek, ideal para los fanáticos de la serie que aman organizar sus aventuras.",
+    "product": "Cuaderno"
+  },
+  {
+    "id": 21,
+    "name": "Mochila Gaming con Compartimentos",
+    "category": "Hardware",
+    "price": 129.99,
+    "image": "https://placehold.co/600x600?text=Producto",
+    "description": "Mochila gaming con múltiples compartimentos y acolchado para proteger tus dispositivos y accesorios mientras viajas.",
+    "product": "Mochila"
+  }
+]

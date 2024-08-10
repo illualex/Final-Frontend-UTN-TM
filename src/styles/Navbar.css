@@ -38,7 +38,7 @@
   height: 30px;
   padding: 5px 40px 5px 10px;
   border-radius: 20px;
-  border: 3px solid #03071E;
+  border: 3px solid #03071e;
   transition: border-color 0.3s ease;
 }
 
@@ -77,8 +77,7 @@
 }
 
 /* Botón de carrito y login */
-.btn-cart,
-.btn-login {
+.btn-cart {
   background: none;
   border: none;
   cursor: pointer;
@@ -102,10 +101,13 @@
   font-size: larger;
   margin: 10px;
   padding: 8px 25px;
-  border: 1px solid #03071E;
+  border-radius: 20px;
+  color: black;
+  border: 1px solid #03071e;
   display: flex;
   align-items: center;
   white-space: nowrap;
+  text-decoration: none;
 }
 
 .btn-login:hover {
@@ -120,10 +122,19 @@
   font-size: larger;
   display: flex;
   justify-content: center;
-  background-color: #03071E;
+  background-color: #03071e;
   padding: 20px 0;
   border-bottom: 5px solid;
-  border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  border-image: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
   border-image-slice: 1;
 }
 
@@ -151,14 +162,16 @@
   margin: 0;
   color: white;
   border-bottom: 5px solid;
-  border-image: linear-gradient(to right,
-      red,
-      orange,
-      yellow,
-      green,
-      blue,
-      indigo,
-      violet);
+  border-image: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
   border-image-slice: 1;
 }
 
@@ -203,7 +216,7 @@
   .menu-toggle {
     display: flex;
     font-size: 30px;
-    background-color: #03071E;
+    background-color: #03071e;
     margin: 10px 0 0 0;
   }
 
@@ -381,6 +394,8 @@
 
   .btn-login {
     font-size: 20px;
+    text-decoration: none;
+    color: black;
     /* Tamaño aún mayor para el botón de inicio de sesión */
     padding: 12px 35px;
     /* Espacio interno aumentado */

@@ -1,0 +1,87 @@
+/* Estilos para el contenedor de la página */
+.page-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Altura completa de la ventana */
+  background-color: #f0f0f0; /* Fondo gris claro para contraste */
+}
+
+/* Estilos para el contenedor de inicio de sesión */
+.sign-up-container {
+  max-width: 400px; /* Aumenta el ancho máximo */
+  width: 100%; /* Asegura que ocupe el 100% del ancho disponible hasta el max-width */
+  padding: 3.5rem; /* Aumenta el padding para más espacio interior */
+  border: 2px solid #000;
+  border-radius: 10px; /* Ajusta el border-radius si es necesario */
+  background-color: #fff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+  color: #000;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Estilos para el título */
+.sign-up-container h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #000;
+}
+
+/* Estilos para el formulario */
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos para los grupos de formulario */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+/* Estilos para las etiquetas del formulario */
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Estilos para los campos de entrada */
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #000;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  color: #000;
+  font-size: 1rem;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+/* Estilos para los campos de entrada cuando están en foco */
+.form-group input:focus {
+  border-color: #333;
+  background-color: #fff;
+  outline: none;
+}
+
+/* Estilos para el botón de inicio de sesión */
+.btn-loginIn {
+  padding: 0.75rem;
+  margin: 10px 0;
+  border: none;
+  border-radius: 15px;
+  background-color: #000;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Estilos para el botón cuando se pasa el ratón sobre él */
+.btn-loginIn:hover {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+  transform: none; /* Elimina el efecto de escala */
+}

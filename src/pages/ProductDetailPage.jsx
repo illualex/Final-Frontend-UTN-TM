@@ -1,6 +1,6 @@
 import React from 'react';
 
-const HomePage = () => {
+const ProductDetailPage = () => {
     console.log('HomePage is rendering'); // Diagnóstico
     return (
         <div>
@@ -10,4 +10,4 @@ const HomePage = () => {
     );
 };
 
-export default HomePage;
+export default ProductDetailPage;
