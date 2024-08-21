@@ -1,0 +1,31 @@
+/* src/styles/CartPage.css */
+
+.cart-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.cart-content {
+  flex: 1;
+}
+
+.cart-item-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+.cart-item-table th,
+.cart-item-table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.cart-item-table th {
+  background-color: #f5f5f5;
+}
+
+/* Asegúrate de que el CSS de CartItem esté bien aplicado */

@@ -1,0 +1,70 @@
+/* src/styles/CartItem.css */
+
+.cart-item-details {
+  display: flex;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.cart-item-image-container {
+  margin-right: 1rem; /* Espacio entre la imagen y el título */
+}
+
+.cart-item-image-container img {
+  width: 100px; /* Tamaño ajustado de la imagen */
+  height: 100px; /* Altura ajustada de la imagen */
+  object-fit: cover; /* Asegura que la imagen se ajuste bien */
+  border-radius: 4px; /* Opcional: redondea las esquinas de la imagen */
+}
+
+.cart-item-title {
+  font-size: 18px; /* Tamaño del texto del título ajustado */
+  line-height: 1.4; /* Espaciado entre líneas para una mejor legibilidad */
+}
+
+.cart-item-price,
+.cart-item-action {
+  text-align: center;
+}
+
+.cart-item-quantity button {
+  border: 1px solid red; /* Borde rojo */
+  background: white; /* Fondo blanco */
+  color: black; /* Texto rojo */
+  padding: 8px 12px; /* Ajusta el padding de los botones */
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px; /* Tamaño de fuente en los botones */
+  margin: 0 4px; /* Espacio entre los botones y el contador */
+}
+
+.cart-item-quantity button:hover {
+  background: red; /* Fondo rojo en hover */
+  color: white; /* Texto blanco en hover */
+}
+
+.cart-item-quantity span {
+  font-size: 18px; /* Tamaño del texto del contador */
+  margin: 0 12px; /* Espacio entre el contador y los botones */
+}
+
+.cart-item-action button {
+  border: 0.03rem solid red; /* Borde rojo muy delgado */
+  background: white; /* Fondo blanco */
+  color: red; /* Texto rojo */
+  padding: 0.3rem 0.6rem; /* Padding reducido */
+  cursor: pointer;
+  border-radius: 0.2rem; /* Radio de borde redondeado más pequeño */
+  font-size: 1rem; /* Tamaño de fuente reducido */
+  margin: 0 0.1rem; /* Espacio mínimo entre botones */
+  transition: all 0.3s ease; /* Suaviza el cambio de estilos */
+}
+
+.cart-item-action button:hover {
+  background: red; /* Fondo rojo en hover */
+  color: white; /* Texto blanco en hover */
+  box-shadow: 0 0 0 0.03rem red; /* Borde rojo simulado con sombra muy delgada en hover */
+}

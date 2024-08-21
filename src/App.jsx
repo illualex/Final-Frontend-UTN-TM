@@ -8,13 +8,14 @@ import ProductDetailPage from "./pages/ProductDetailPage";
 import CustomPage from "./pages/CustomPage";
 import HelpPage from "./pages/HelpPage";
 import SignUpPage from "./pages/SignUpPage";
+import CartPage from "./pages/CartPage";
 
 const App = () => {
   return (
     /* --- Para Producción Usar --- */
-    /* <Router basename="/Final-Frontend-UTN-TM"> */
-    /* --- Para Desarrollo Usar --- */
-    <Router>
+    <Router basename="/Final-Frontend-UTN-TM">
+      {/* --- Para Desarrollo Usar --- */}
+      {/* <Router> */}
       <Navbar />
       <main>
         <Routes>
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/custom" element={<CustomPage />} />
           <Route path="/help" element={<HelpPage />} />
           <Route path="/signup" element={<SignUpPage />} />
+          <Route path="/cart" element={<CartPage />} />
         </Routes>
       </main>
       <Footer />

@@ -1,13 +1,17 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
 import "../styles/ImageCarousel.css";
+
+import bannerLogitech from "../assets/images/image-carousel/img-logitech-banner.jpg";
+import bannerBuildPc from "../assets/images/image-carousel/img-buildpc-banner.jpg";
+import bannerNvidia from "../assets/images/image-carousel/img-nvidia-banner.jpg";
+import bannerAmd from "../assets/images/image-carousel/img-amd-banner.jpg";
+import bannerGigabyte from "../assets/images/image-carousel/img-gigabyte-banner.jpg";
 
 const ImageCarousel = () => {
   return (
@@ -21,44 +25,23 @@ const ImageCarousel = () => {
       loop
       autoplay={{ delay: 3000 }}
       onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log("slide change")}
+      onSlideChange={() => console.log("Banner change")}
     >
       <SwiperSlide>
-        <img
-          src="https://placehold.co/1920x1080?text=Slider-1"
-          alt="Slide 1"
-          style={{ width: "100%", height: "auto" }}
-        />
+        <img src={bannerLogitech} alt="Persona usando un volante para computadora" className="img-banner" />
       </SwiperSlide>
       <SwiperSlide>
-        <img
-          src="https://placehold.co/1920x1080?text=Slider-2"
-          alt="Slide 2"
-          style={{ width: "100%", height: "auto" }}
-        />
+        <img src={bannerGigabyte} alt="Grupo de personas con Aorus" className="img-banner" />
       </SwiperSlide>
       <SwiperSlide>
-        <img
-          src="https://placehold.co/1920x1080?text=Slider-3"
-          alt="Slide 3"
-          style={{ width: "100%", height: "auto" }}
-        />
+        <img src={bannerNvidia} alt="Placa de video de la marca Nvidia" className="img-banner" />
       </SwiperSlide>
       <SwiperSlide>
-        <img
-          src="https://placehold.co/1920x1080?text=Slider-4"
-          alt="Slide 4"
-          style={{ width: "100%", height: "auto" }}
-        />
+        <img src={bannerAmd} alt="Placa de video y un procesador de la marca AMD" className="img-banner" />
       </SwiperSlide>
       <SwiperSlide>
-        <img
-          src="https://placehold.co/1920x1080?text=Slider-5"
-          alt="Slide 5"
-          style={{ width: "100%", height: "auto" }}
-        />
+        <img src={bannerBuildPc} alt="Banner de Arma tu pc" className="img-banner" />
       </SwiperSlide>
-      {/* Añade más SwiperSlide aquí si es necesario */}
     </Swiper>
   );
 };
