@@ -14,8 +14,8 @@ const App = () => {
   return (
     /* --- Para Producción Usar --- */
     <Router basename="/Final-Frontend-UTN-TM">
-      {/* --- Para Desarrollo Usar --- */}
-      {/* <Router> */}
+      {/* /* --- Para Desarrollo Usar --- */}
+    {/* <Router> */}
       <Navbar />
       <main>
         <Routes>

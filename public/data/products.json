@@ -4,7 +4,7 @@
     "name": "Teclado Mecánico HyperX",
     "category": "Hardware",
     "price": 229999.99,
-    "image": "../images/img-teclado-hyperx.jpg",
+    "image": "/Final-Frontend-UTN-TM/images/img-teclado-hyperx.jpg",
     "description": "Teclado mecánico con retroiluminación RGB personalizable y switches mecánicos de alta calidad.",
     "product": "Teclado"
   },
