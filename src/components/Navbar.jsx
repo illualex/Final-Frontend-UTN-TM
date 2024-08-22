@@ -23,7 +23,7 @@ const Navbar = () => {
     <>
       <nav className="navbar">
         <div className="navbar-top">
-          <Link to="/" className="navbar-logo-link">
+          <Link to="/home" className="navbar-logo-link">
             <img src={logo} alt="GamerMania Logo" className="navbar-logo" />
           </Link>
 
@@ -58,7 +58,7 @@ const Navbar = () => {
         </button>
 
         <div className={`navbar-bottom ${isMenuOpen ? "active" : ""}`}>
-          <Link to="/" className="navbar-link">
+          <Link to="/home" className="navbar-link">
             Inicio
           </Link>
           <Link to="/products" className="navbar-link">
