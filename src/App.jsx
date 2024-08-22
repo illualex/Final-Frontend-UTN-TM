@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
@@ -16,10 +21,11 @@ const App = () => {
       {/* --- Para Producción Usar --- */}
       <Router basename="/Final-Frontend-UTN-TM">
         {/* --- Para Desarrollo Usar --- */}
-      {/* <Router> */}
+        {/* <Router> */}
         <Navbar />
         <main>
           <Routes>
+            <Route path="/" element={<Navigate to="/home" />} />
             <Route path="/home" element={<HomePage />} />
             <Route path="/products" element={<ProductsPage />} />
             {/* <Route path="/products/:productId" element={<ProductDetailPage />} /> */}
