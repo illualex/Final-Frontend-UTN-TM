@@ -18,7 +18,10 @@ import CartPage from "./pages/CartPage";
 const App = () => {
   return (
     <>
+      {/* --- Para Producción Usar --- */}
       <Router basename="/Final-Frontend-UTN-TM">
+        {/* --- Para Desarrollo Usar --- */}
+        {/* <Router> */}
         <Navbar />
         <main>
           <Routes>
@@ -30,8 +33,6 @@ const App = () => {
             <Route path="/help" element={<HelpPage />} />
             <Route path="/signup" element={<SignUpPage />} />
             <Route path="/cart" element={<CartPage />} />
-            {/* Ruta para redirigir rutas no encontradas */}
-            <Route path="*" element={<Navigate to="/home" />} />
           </Routes>
         </main>
         <Footer />
