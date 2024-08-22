@@ -19,10 +19,14 @@ Currently, two official plugins are available:
     - _ react icons
     - _ swiper (Para la creación de un Slider/Carousel)
 
+- Agregados Extra:
+    - Creación de un 'vercel.json' para arreglar un error de SPA, ahora al recargar la pagina se mantiene en el mismo lugar de la recarga y no tire un fatal error 404. También al 'vite.config.js' se le agrego "base: '/'," para el manejo de las routes de App.
+
 - Dificultades:
+    - _ Creación del React Router en el App (A veces dejaba de andar y necesitaba relevantar el localhost).
     - _ Colocar Varios puntos de interrupción para adaptar progresivamente las vistas en celular(320px a 425px), tablet(426px a 768px), laptop(769px a 1024px), pantalla grande(1025px a 1440px) y pantalla ultra grande(1441px a mas), etc.
-    - _ Creación y adaptación responsive del menu a menu-hamburguesa/filtro para las medidas 320px a 425px.
-    - _ Manejo de estados mediante el uso de globalcontext y algunos usos de Hooks.
+    - _ Creación y adaptación responsive del menu a menu-hamburguesa/filtro para las medidas 320px a 425px para hacerlo mas responsive.
+    - _ Creación y Manejo de estados mediante el uso de globalcontext y algunos usos de Hooks. (React a veces no me tomaba bien los cambios y necesitaba reiniciar el localhost o probar una forma distinta de crearlo e integrarlo para que funcione correctamente).
 
 - Recomendaciones futuras:
     - _ Seria bueno que en la cursada sea mas larga en Frontend, también estaría bueno explicar 
