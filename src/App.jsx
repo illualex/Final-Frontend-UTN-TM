@@ -18,10 +18,7 @@ import CartPage from "./pages/CartPage";
 const App = () => {
   return (
     <>
-      {/* --- Para Producción Usar --- */}
-      <Router basename="/Final-Frontend-UTN-TM">
-        {/* --- Para Desarrollo Usar --- */}
-        {/* <Router> */}
+      <Router>
         <Navbar />
         <main>
           <Routes>

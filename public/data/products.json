@@ -4,7 +4,7 @@
     "name": "Teclado Mecánico HyperX",
     "category": "Hardware",
     "price": 229999.99,
-    "image": "/Final-Frontend-UTN-TM/images/img-teclado-hyperx.jpg",
+    "image": "/images/img-teclado-hyperx.jpg",
     "description": "Teclado mecánico con retroiluminación RGB personalizable y switches mecánicos de alta calidad.",
     "product": "Teclado"
   },
@@ -13,7 +13,7 @@
     "name": "Logitech G PRO Gaming Mouse",
     "category": "Hardware",
     "price": 65999.99,
-    "image": "/Final-Frontend-UTN-TM/images/img-mouse-logitech.jpg",
+    "image": "/images/img-mouse-logitech.jpg",
     "description": "Ratón gaming con ajuste de DPI hasta 16000 y botones programables para una experiencia de juego óptima.",
     "product": "Mouse"
   },
@@ -22,7 +22,7 @@
     "name": "Auriculares HyperX Cloud Flight",
     "category": "Hardware",
     "price": 239999.99,
-    "image": "/Final-Frontend-UTN-TM/images/img-auriculares-hyperx.jpg",
+    "image": "/images/img-auriculares-hyperx.jpg",
     "description": "Auriculares gaming con sonido envolvente 7.1, micrófono ajustable y almohadillas cómodas para largas sesiones de juego.",
     "product": "Auriculares"
   },
@@ -31,7 +31,7 @@
     "name": "Funko Pop! Star Wars Boba Fett",
     "category": "Geek",
     "price": 39999.99,
-    "image": "/Final-Frontend-UTN-TM/images/img-funko-starwars.jpg",
+    "image": "/images/img-funko-starwars.jpg",
     "description": "Figura coleccionable Funko Pop! de Star Wars, ideal para fans de la saga y coleccionistas.",
     "product": "Figuras"
   },
@@ -40,7 +40,7 @@
     "name": "Camiseta de Marvel - Spider-Man",
     "category": "Geek",
     "price": 18999.99,
-    "image": "/Final-Frontend-UTN-TM/images/img-remera-spiderman.jpg",
+    "image": "/images/img-remera-spiderman.jpg",
     "description": "Camiseta de algodón con diseño gráfico de Spider-Man, perfecta para fans del universo Marvel.",
     "product": "Ropa"
   },
@@ -49,7 +49,7 @@
     "name": "Taza Harry Potter - Gryffindor",
     "category": "Geek",
     "price": 8999.99,
-    "image": "/Final-Frontend-UTN-TM/images/img-taza-hp.jpg",
+    "image": "/images/img-taza-hp.jpg",
     "description": "Taza de cerámica con el escudo de Gryffindor, ideal para los seguidores de Harry Potter.",
     "product": "Tazas"
   },
@@ -58,7 +58,7 @@
     "name": "Monitor Aorus 27\" 144Hz",
     "category": "Hardware",
     "price": 589999.99,
-    "image": "/Final-Frontend-UTN-TM/images/img-monitor-gigabyte.jpg",
+    "image": "/images/img-monitor-gigabyte.jpg",
     "description": "Monitor gaming de 27 pulgadas con frecuencia de actualización de 144Hz y resolución Full HD para una experiencia de juego fluida.",
     "product": "Monitor"
   },
@@ -67,7 +67,7 @@
     "name": "Silla Femmto Ergonomica",
     "category": "Hardware",
     "price": 289999.99,
-    "image": "/Final-Frontend-UTN-TM/images/img-silla-femmto.jpg",
+    "image": "/images/img-silla-femmto.jpg",
     "description": "Silla gaming ergonómica con ajuste de altura y reposabrazos acolchados, ideal para largas sesiones frente al PC.",
     "product": "Silla"
   },
@@ -76,7 +76,7 @@
     "name": "Mouse Pad XXL RGB",
     "category": "Hardware",
     "price": 16599.99,
-    "image": "/Final-Frontend-UTN-TM/images/img-mousepad-rgb.jpg",
+    "image": "/images/img-mousepad-rgb.jpg",
     "description": "Alfombrilla de ratón XXL con retroiluminación RGB y superficie antideslizante para un mejor control del ratón.",
     "product": "MousePad"
   },
@@ -85,7 +85,7 @@
     "name": "Puzzle 4D R2D2 - Star Wars",
     "category": "Geek",
     "price": 44999.99,
-    "image": "/Final-Frontend-UTN-TM/images/img-puzzle4d-starwars.jpg",
+    "image": "/images/img-puzzle4d-starwars.jpg",
     "description": "Puzzle de 1000 piezas con temática de Star Wars, perfecto para los fanáticos de la saga que disfrutan de desafíos.",
     "product": "Rompecabezas"
   },
@@ -94,7 +94,7 @@
     "name": "Cuaderno Star Trek",
     "category": "Geek",
     "price": 8999.99,
-    "image": "/Final-Frontend-UTN-TM/images/img-cuaderno-startrek.jpg",
+    "image": "/images/img-cuaderno-startrek.jpg",
     "description": "Cuaderno de notas con diseño de Star Trek, ideal para tomar apuntes o como regalo para los fanáticos de la serie.",
     "product": "Cuaderno"
   },
@@ -103,7 +103,7 @@
     "name": "LED Neon Azul - The Mandalorian",
     "category": "Geek",
     "price": 39999.99,
-    "image": "/Final-Frontend-UTN-TM/images/img-led-starwars.jpg",
+    "image": "/images/img-led-starwars.jpg",
     "description": "Lámpara LED con diseño de The Mandalorian, que ilumina tu espacio con un toque geek y elegante.",
     "product": "Luces"
   },
@@ -112,7 +112,7 @@
     "name": "Cargador Samsung 25w USB-C",
     "category": "Hardware",
     "price": 31999.99,
-    "image": "/Final-Frontend-UTN-TM/images/img-cargador-usbc.jpg",
+    "image": "/images/img-cargador-usbc.jpg",
     "description": "Cargador rápido USB-C de 25w con soporte para carga de alta velocidad y compatibilidad con la mayoría de dispositivos modernos.",
     "product": "Cargadores"
   },
@@ -121,7 +121,7 @@
     "name": "Estación Acoplamiento Gadnic para Laptop",
     "category": "Hardware",
     "price": 125999.99,
-    "image": "/Final-Frontend-UTN-TM/images/img-hub-laptop.jpg",
+    "image": "/images/img-hub-laptop.jpg",
     "description": "Estación de acoplamiento para laptop con múltiples puertos USB, HDMI y Ethernet, ideal para configurar un espacio de trabajo completo.",
     "product": "Accesorios"
   },
@@ -130,7 +130,7 @@
     "name": "Auriculares JBL Quantum TWS",
     "category": "Hardware",
     "price": 249999.99,
-    "image": "/Final-Frontend-UTN-TM/images/img-auriculares-jbl.jpg",
+    "image": "/images/img-auriculares-jbl.jpg",
     "description": "Auriculares in-ear Bluetooth con cancelación de ruido y batería de larga duración, perfectos para la movilidad.",
     "product": "Auriculares"
   },
@@ -139,7 +139,7 @@
     "name": "Funko Pop! Marvel Iron Man",
     "category": "Geek",
     "price": 81999.99,
-    "image": "/Final-Frontend-UTN-TM/images/img-funko-marvel.jpg",
+    "image": "/images/img-funko-marvel.jpg",
     "description": "Figura coleccionable Funko Pop! del universo Marvel, ideal para añadir a tu colección.",
     "product": "Figuras"
   },
@@ -148,7 +148,7 @@
     "name": "Alfombra Diseño de Zelda",
     "category": "Geek",
     "price": 48999.99,
-    "image": "/Final-Frontend-UTN-TM/images/img-alfombra-zelda.jpg",
+    "image": "/images/img-alfombra-zelda.jpg",
     "description": "Alfombra del juego con diseño del universo Zelda, cómoda y con un diseño llamativo para los fans.",
     "product": "Alfombra"
   },
@@ -157,7 +157,7 @@
     "name": "Reloj de Pared Star Wars R2D2",
     "category": "Geek",
     "price": 44999.99,
-    "image": "/Final-Frontend-UTN-TM/images/img-reloj-starwars.jpg",
+    "image": "/images/img-reloj-starwars.jpg",
     "description": "Reloj de pared con diseño de Star Wars, ideal para decorar tu habitación o espacio de trabajo.",
     "product": "Reloj"
   },
@@ -166,7 +166,7 @@
     "name": "Alargue Prolongador USB 3.0",
     "category": "Hardware",
     "price": 13999.99,
-    "image": "/Final-Frontend-UTN-TM/images/img-cable-usb.jpg",
+    "image": "/images/img-cable-usb.jpg",
     "description": "Cable de datos de alta velocidad con conector USB 3.0, ideal para transferencias rápidas y seguras.",
     "product": "Cables"
   },
@@ -175,7 +175,7 @@
     "name": "Cuaderno de Marvel",
     "category": "Geek",
     "price": 8999.99,
-    "image": "/Final-Frontend-UTN-TM/images/img-cuaderno-marvel.jpg",
+    "image": "/images/img-cuaderno-marvel.jpg",
     "description": "Cuaderno de viaje con diseño de Marvel, ideal para los fanáticos de la serie que aman organizar sus aventuras.",
     "product": "Cuaderno"
   },
@@ -184,7 +184,7 @@
     "name": "Mochila Porta Notebook Impermeable",
     "category": "Hardware",
     "price": 17999.99,
-    "image": "/Final-Frontend-UTN-TM/images/img-mochila-gamer.jpg",
+    "image": "/images/img-mochila-gamer.jpg",
     "description": "Mochila gaming con múltiples compartimentos y acolchado para proteger tus dispositivos y accesorios mientras viajas.",
     "product": "Mochila"
   }
