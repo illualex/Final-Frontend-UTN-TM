@@ -17,24 +17,35 @@ const useCartForm = (onSubmit) => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    if (e && e.preventDefault) {
+      e.preventDefault();
+    } else {
+      console.error("handleSubmit fue llamado sin un evento");
+      return;
+    }
+
     const newErrors = validate();
     if (Object.keys(newErrors).length === 0) {
       setSubmitted(true);
-      onSubmit();
+      if (onSubmit) onSubmit();
     } else {
       setErrors(newErrors);
     }
   };
 
   return {
-    postalCode, setPostalCode,
-    shipping, setShipping,
-    payment, setPayment,
-    discountCode, setDiscountCode,
+    postalCode,
+    setPostalCode,
+    shipping,
+    setShipping,
+    payment,
+    setPayment,
+    discountCode,
+    setDiscountCode,
     errors,
-    submitted, setSubmitted,
-    handleSubmit
+    submitted,
+    setSubmitted,
+    handleSubmit,
   };
 };
 

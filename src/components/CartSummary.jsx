@@ -20,10 +20,19 @@ const CartSummary = ({ cartItems, onSubmit }) => {
     handleSubmit,
     submitted,
   } = useCartForm(onSubmit);
+
   const total = cartItems.reduce(
     (total, item) => total + item.price * item.quantity,
     0
   );
+
+  const formatPrice = (price) => {
+    return new Intl.NumberFormat("es-AR", {
+      style: "currency",
+      currency: "ARS",
+      minimumFractionDigits: 2,
+    }).format(price);
+  };
 
   return (
     <div className="cart-summary">
@@ -178,7 +187,7 @@ const CartSummary = ({ cartItems, onSubmit }) => {
         </div>
 
         <div className="total-section">
-          <p>Precio: ${total.toFixed(2)}</p>
+          <p>Precio: {formatPrice(total)}</p>
         </div>
 
         <button type="submit">Finalizar Compra</button>

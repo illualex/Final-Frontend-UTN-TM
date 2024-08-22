@@ -9,9 +9,7 @@ const CartPage = () => {
   const { cartItems, removeFromCart, increaseQuantity, decreaseQuantity } =
     useGlobalContext();
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log("Compra realizada");
+  const handleSubmit = () => {
   };
 
   return (
