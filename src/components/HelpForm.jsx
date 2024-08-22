@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/HelpForm.css"; // Importa el archivo CSS
+import "../styles/HelpForm.css";
 
 const HelpForm = ({ onSuccess }) => {
   const [formData, setFormData] = useState({
@@ -40,79 +40,80 @@ const HelpForm = ({ onSuccess }) => {
     if (Object.keys(newErrors).length === 0) {
       setSubmitted(true);
       onSuccess();
-      // Aquí podrías enviar los datos al servidor
     } else {
       setErrors(newErrors);
     }
   };
 
   return (
-    <form className="help-form" onSubmit={handleSubmit}>
-      <label>
-        Nombre y Apellido
-        <input
-          type="text"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-        />
-        {errors.name && <span className="error">{errors.name}</span>}
-      </label>
+    <>
+      <form className="help-form" onSubmit={handleSubmit}>
+        <label>
+          Nombre y Apellido
+          <input
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+          />
+          {errors.name && <span className="error">{errors.name}</span>}
+        </label>
 
-      <label>
-        Email
-        <input
-          type="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-        />
-        {errors.email && <span className="error">{errors.email}</span>}
-      </label>
+        <label>
+          Email
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+          />
+          {errors.email && <span className="error">{errors.email}</span>}
+        </label>
 
-      <label>
-        Número del Pedido
-        <input
-          type="text"
-          name="orderNumber"
-          value={formData.orderNumber}
-          onChange={handleChange}
-        />
-        {errors.orderNumber && (
-          <span className="error">{errors.orderNumber}</span>
-        )}
-      </label>
+        <label>
+          Número del Pedido
+          <input
+            type="text"
+            name="orderNumber"
+            value={formData.orderNumber}
+            onChange={handleChange}
+          />
+          {errors.orderNumber && (
+            <span className="error">{errors.orderNumber}</span>
+          )}
+        </label>
 
-      <label>
-        Número de Teléfono (Opcional)
-        <input
-          type="tel"
-          name="phone"
-          value={formData.phone}
-          onChange={handleChange}
-        />
-      </label>
+        <label>
+          Número de Teléfono (Opcional)
+          <input
+            type="tel"
+            name="phone"
+            value={formData.phone}
+            onChange={handleChange}
+          />
+        </label>
 
-      <label>
-        Descripción
-        <textarea
-          name="description"
-          value={formData.description}
-          onChange={handleChange}
-        />
-        {errors.description && (
-          <span className="error">{errors.description}</span>
-        )}
-      </label>
+        <label>
+          Descripción
+          <textarea
+            name="description"
+            value={formData.description}
+            onChange={handleChange}
+          />
+          {errors.description && (
+            <span className="error">{errors.description}</span>
+          )}
+        </label>
 
-      <label>
-        Imagen del Producto (Opcional)
-        <input type="file" name="image" onChange={handleChange} />
-      </label>
+        <label>
+          Imagen del Producto (Opcional)
+          <input type="file" name="image" onChange={handleChange} />
+        </label>
 
-      <button type="submit">Enviar</button>
-      {submitted && <p className="success">¡Formulario enviado con éxito!</p>}
-    </form>
+        <button type="submit">Enviar</button>
+        {submitted && <p className="success">¡Formulario enviado con éxito!</p>}
+      </form>
+    </>
   );
 };
 

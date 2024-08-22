@@ -1,5 +1,4 @@
-// src/contexts/GlobalContext.jsx
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useState, useEffect } from "react";
 
 const GlobalContext = createContext();
 
@@ -8,6 +7,14 @@ export const GlobalProvider = ({ children }) => {
     const savedItems = localStorage.getItem("cartItems");
     return savedItems ? JSON.parse(savedItems) : [];
   });
+
+  useEffect(() => {
+    if (cartItems.length > 0) {
+      localStorage.setItem("cartItems", JSON.stringify(cartItems));
+    } else {
+      localStorage.removeItem("cartItems");
+    }
+  }, [cartItems]);
 
   const addToCart = (product) => {
     setCartItems((prevItems) => {
@@ -25,9 +32,15 @@ export const GlobalProvider = ({ children }) => {
   };
 
   const removeFromCart = (productId) => {
-    setCartItems((prevItems) =>
-      prevItems.filter((item) => item.id !== productId)
-    );
+    setCartItems((prevItems) => {
+      const updatedItems = prevItems.filter((item) => item.id !== productId);
+      if (updatedItems.length > 0) {
+        localStorage.setItem("cartItems", JSON.stringify(updatedItems));
+      } else {
+        localStorage.removeItem("cartItems");
+      }
+      return updatedItems;
+    });
   };
 
   const increaseQuantity = (productId) => {

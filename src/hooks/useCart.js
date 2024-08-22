@@ -1,4 +1,3 @@
-// src/hooks/useCart.js
 import { useState, useEffect } from "react";
 
 export const useCart = () => {
@@ -8,7 +7,11 @@ export const useCart = () => {
   });
 
   useEffect(() => {
-    localStorage.setItem("cartItems", JSON.stringify(cartItems));
+    if (cartItems.length > 0) {
+      localStorage.setItem("cartItems", JSON.stringify(cartItems));
+    } else {
+      localStorage.removeItem("cartItems");
+    }
   }, [cartItems]);
 
   const addToCart = (product) => {
@@ -27,9 +30,15 @@ export const useCart = () => {
   };
 
   const removeFromCart = (productId) => {
-    setCartItems((prevItems) =>
-      prevItems.filter((item) => item.id !== productId)
-    );
+    setCartItems((prevItems) => {
+      const updatedItems = prevItems.filter((item) => item.id !== productId);
+      if (updatedItems.length > 0) {
+        localStorage.setItem("cartItems", JSON.stringify(updatedItems));
+      } else {
+        localStorage.removeItem("cartItems");
+      }
+      return updatedItems;
+    });
   };
 
   const getCartItemCount = () => {

@@ -1,7 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -12,6 +11,29 @@ import bannerBuildPc from "../assets/images/image-carousel/img-buildpc-banner.jp
 import bannerNvidia from "../assets/images/image-carousel/img-nvidia-banner.jpg";
 import bannerAmd from "../assets/images/image-carousel/img-amd-banner.jpg";
 import bannerGigabyte from "../assets/images/image-carousel/img-gigabyte-banner.jpg";
+
+const banners = [
+  {
+    src: bannerLogitech,
+    alt: "Persona usando un volante para computadora",
+  },
+  {
+    src: bannerGigabyte,
+    alt: "Grupo de personas con Aorus",
+  },
+  {
+    src: bannerNvidia,
+    alt: "Placa de video de la marca Nvidia",
+  },
+  {
+    src: bannerAmd,
+    alt: "Placa de video y un procesador de la marca AMD",
+  },
+  {
+    src: bannerBuildPc,
+    alt: "Banner de Arma tu pc",
+  },
+];
 
 const ImageCarousel = () => {
   return (
@@ -24,24 +46,12 @@ const ImageCarousel = () => {
       pagination={{ clickable: true }}
       loop
       autoplay={{ delay: 3000 }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log("Banner change")}
     >
-      <SwiperSlide>
-        <img src={bannerLogitech} alt="Persona usando un volante para computadora" className="img-banner" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src={bannerGigabyte} alt="Grupo de personas con Aorus" className="img-banner" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src={bannerNvidia} alt="Placa de video de la marca Nvidia" className="img-banner" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src={bannerAmd} alt="Placa de video y un procesador de la marca AMD" className="img-banner" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src={bannerBuildPc} alt="Banner de Arma tu pc" className="img-banner" />
-      </SwiperSlide>
+      {banners.map((banner, index) => (
+        <SwiperSlide key={index}>
+          <img src={banner.src} alt={banner.alt} className="img-banner" />
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 };

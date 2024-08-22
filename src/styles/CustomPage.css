@@ -1,10 +1,9 @@
-/* src/pages/UnderConstructionPage.css */
 .construction-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Usa toda la altura de la ventana */
-  background-color: #f4f4f4; /* Fondo gris claro */
+  height: 100vh;
+  background-color: #f4f4f4;
 }
 
 .construction-container img {
@@ -13,9 +12,9 @@
 
 .message {
   text-align: center;
-  padding: 20px;
+  padding: 1.25rem;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   background-color: #fff;
 }
 
@@ -29,16 +28,15 @@
   color: #666;
 }
 
-/* Media Queries */
-
-/* Móviles (320px a 425px) */
+/* MEDIA QUERY */
+/* Móviles: 0px a 425px */
 @media (max-width: 425px) {
   .construction-container img {
     width: 60%;
   }
 
   .message {
-    padding: 15px;
+    padding: 0.9375rem;
   }
 
   .message h1 {
@@ -50,14 +48,14 @@
   }
 }
 
-/* Tablets (426px a 768px) */
+/* Tablets: 426px a 768px */
 @media (min-width: 426px) and (max-width: 768px) {
   .construction-container img {
     width: 50%;
   }
 
   .message {
-    padding: 20px;
+    padding: 1.25rem;
   }
 
   .message h1 {
@@ -69,14 +67,14 @@
   }
 }
 
-/* Laptops (769px a 1024px) */
+/* Laptops: 769px a 1024px */
 @media (min-width: 769px) and (max-width: 1024px) {
   .construction-container img {
     width: 40%;
   }
 
   .message {
-    padding: 25px;
+    padding: 1.5625rem;
   }
 
   .message h1 {
@@ -88,14 +86,14 @@
   }
 }
 
-/* Pantallas grandes (1025px a 1440px) */
+/* Pantallas grandes: 1025px a 1440px */
 @media (min-width: 1025px) and (max-width: 1440px) {
   .construction-container img {
     width: 35%;
   }
 
   .message {
-    padding: 30px;
+    padding: 1.875rem;
   }
 
   .message h1 {
@@ -107,14 +105,14 @@
   }
 }
 
-/* Pantallas ultra grandes (1441px a más) */
+/* Pantallas ultra grandes: 1441px a más */
 @media (min-width: 1441px) {
   .construction-container img {
     width: 30%;
   }
 
   .message {
-    padding: 35px;
+    padding: 2.1875rem;
   }
 
   .message h1 {

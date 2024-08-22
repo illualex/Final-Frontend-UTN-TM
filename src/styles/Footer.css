@@ -1,20 +1,19 @@
-/* General */
-h2 {
-  margin: 0.625rem 0; /* 10px = 0.625rem */
+.footer h2 {
+  margin: 0.625rem 0;
 }
 
 .footer {
   background-color: #03071e;
   color: #fff;
-  padding: 1.25rem; /* 20px = 1.25rem */
+  padding: 1.25rem;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   display: flex;
-  justify-content: center; /* Centra el contenedor principal horizontalmente */
+  justify-content: center;
   width: 100%;
-  border-top: 0.3125rem solid transparent; /* 5px = 0.3125rem */
+  border-top: 0.3125rem solid transparent;
   border-image: linear-gradient(
       to right,
       red,
@@ -25,68 +24,63 @@ h2 {
       indigo,
       violet
     )
-    1; /* Establece el borde superior con el gradiente */
+    1;
 }
 
-/* Contenedor principal del footer */
 .footer-content {
   display: flex;
-  justify-content: space-between; /* Distribuye el espacio entre las secciones */
-  align-items: center; /* Alinea las secciones verticalmente al centro */
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  max-width: 75rem; /* 1200px = 75rem */
+  max-width: 75rem;
   margin: 0 auto;
 }
 
-/* Estilo para las secciones del footer */
 .footer-section {
   flex: 1;
-  margin: 0.625rem; /* 10px = 0.625rem */
+  margin: 0.625rem;
 }
 
-/* Sección de enlaces rápidos */
 .footer-section.left {
-  text-align: left; /* Alinea el contenido a la izquierda */
+  text-align: left;
 }
 
 .footer-section.left ul {
   padding: 0;
   margin: 0;
-  list-style: none; /* Elimina los puntos de la lista */
+  list-style: none;
 }
 
 .footer-section.left li {
-  margin-bottom: 0.625rem; /* 10px = 0.625rem */
+  margin-bottom: 0.625rem;
 }
 
 .footer-section.left a {
-  color: #fff; /* Color blanco para los enlaces */
-  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: #fff;
+  text-decoration: none;
 }
 
 .footer-section.left a:hover {
-  text-decoration: underline; /* Subrayado en hover */
+  text-decoration: underline;
 }
 
-/* Sección del logo y derechos reservados */
 .footer-section.middle {
-  text-align: center; /* Centra el contenido */
+  text-align: center;
 }
 
 .footer-section.middle .logo-img {
   max-width: 10rem;
-  margin-bottom: 0.625rem; /* 10px = 0.625rem */
+  margin-bottom: 0.625rem;
 }
 
 .footer-section.middle p {
-  margin-top: 0.625rem; /* 10px = 0.625rem */
-  font-size: 0.9rem; /* 0.9em a rem */
-  color: #aaa; /* Color para el texto de derechos reservados */
+  margin-top: 0.625rem;
+  font-size: 0.9rem;
+  color: #aaa;
 }
 
-/* Sección de suscripción y redes sociales */
 .footer-section.right {
-  text-align: right; /* Alinea el contenido a la derecha */
+  text-align: right;
 }
 
 .footer-section.right form {
@@ -96,141 +90,136 @@ h2 {
 }
 
 .input-gmail {
-  margin-bottom: 0.625rem; /* 10px = 0.625rem */
-  padding: 0.75rem; /* 12px = 0.75rem */
-  border: 0.0625rem solid #ddd; /* 1px = 0.0625rem */
-  border-radius: 1.875rem; /* 30px = 1.875rem */
-  width: 100%; /* Ajusta el ancho al contenedor */
-  max-width: 18.75rem; /* 300px = 18.75rem */
-  box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+  margin-bottom: 0.625rem;
+  padding: 0.75rem;
+  border: 0.0625rem solid #ddd;
+  border-radius: 1.875rem;
+  width: 100%;
+  max-width: 18.75rem;
+  box-sizing: border-box;
 }
 
 .btn-subscribe {
-  background-color: #fff; /* Color de fondo blanco */
-  color: #000; /* Color del texto negro */
-  border: 0.125rem solid black; /* Borde negro */
-  padding: 0.75rem 1.5rem; /* 12px 24px = 0.75rem 1.5rem */
-  border-radius: 1.875rem; /* Bordes redondeados */
-  font-size: 1rem; /* 16px = 1rem */
+  background-color: #fff;
+  color: #000;
+  border: 0.125rem solid black;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1.875rem;
+  font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease,
     border-color 0.3s ease;
 }
 
 .btn-subscribe:hover {
-  background-color: #000; /* Color de fondo negro en hover */
-  color: #fff; /* Color del texto blanco en hover */
-  border-color: white; /* Borde blanco en hover */
+  background-color: #000;
+  color: #fff;
+  border-color: white;
 }
 
 .social-media {
-  margin-top: 0.625rem; /* 10px = 0.625rem */
+  margin-top: 0.625rem;
 }
 
 .social-media a {
-  color: #fff; /* Color blanco para los enlaces */
-  text-decoration: none; /* Elimina el subrayado de los enlaces */
-  margin-left: 0.625rem; /* 10px = 0.625rem */
+  color: #fff;
+  text-decoration: none;
+  margin-left: 0.625rem;
 }
 
 .social-media a:hover {
-  text-decoration: underline; /* Añade una línea debajo en hover */
+  text-decoration: underline;
 }
 
-/* Media Queries */
-
-/* Moviles (320px a 425px) */
-@media (max-width: 26.5625rem) {
-  /* 425px = 26.5625rem */
-  h2 {
-    font-size: 1.25rem; /* Ajusta el tamaño del encabezado */
+/* MEDIA QUERY */
+/* Móviles: max 425px */
+@media (max-width: 425px) {
+  .footer h2 {
+    font-size: 1.25rem; /* 20px */
   }
 
   .footer-content {
-    flex-direction: column; /* Apila las secciones verticalmente */
-    align-items: center; /* Centra las secciones horizontalmente */
+    flex-direction: column;
+    align-items: center;
   }
 
   .footer-section {
-    width: 100%; /* Hace que cada sección ocupe todo el ancho disponible */
-    text-align: center; /* Centra el texto en cada sección */
+    width: 100%;
+    text-align: center;
   }
 
   .footer-section.left {
-    text-align: center; /* Centra el contenido a la izquierda en dispositivos móviles */
+    text-align: center;
   }
+
   .footer-section.right form {
-    align-items: center; /* Centra el formulario */
+    align-items: center;
   }
 }
 
-/* Tablet (426px a 768px) */
-@media (min-width: 26.625rem) and (max-width: 48rem) {
-  /* 426px = 26.625rem, 768px = 48rem */
+/* Tablets: 426px a 768px */
+@media (min-width: 426px) and (max-width: 768px) {
   .footer-content {
-    flex-direction: column; /* Apila las secciones verticalmente */
-    align-items: center; /* Centra las secciones horizontalmente */
+    flex-direction: column;
+    align-items: center;
   }
 
   .footer-section {
-    width: 100%; /* Hace que cada sección ocupe todo el ancho disponible */
-    text-align: center; /* Centra el texto en cada sección */
+    width: 100%;
+    text-align: center;
   }
 
   .footer-section.left,
   .footer-section.right {
-    text-align: center; /* Centra el contenido en tabletas */
+    text-align: center;
   }
 }
 
-/* Laptop (769px a 1024px) */
-@media (min-width: 48.0625rem) and (max-width: 64rem) {
-  /* 769px = 48.0625rem, 1024px = 64rem */
+/* Laptops: 769px a 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
   .footer-content {
-    flex-direction: row; /* Distribuye las secciones en una fila */
-    justify-content: space-between; /* Distribuye el espacio entre las secciones */
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .footer-section {
-    width: auto; /* Permite que las secciones ocupen el espacio necesario */
-    text-align: left; /* Alinea el texto a la izquierda */
+    width: auto;
+    text-align: left;
   }
 
   .footer-section.middle {
-    text-align: center; /* Centra el contenido del logo */
+    text-align: center;
   }
 }
 
-/* Pantallas Grandes (1025px a 1440px) */
-@media (min-width: 64.0625rem) and (max-width: 90rem) {
-  /* 1025px = 64.0625rem, 1440px = 90rem */
+/* Pantallas Grandes: 1025px a 1440px */
+@media (min-width: 1025px) and (max-width: 1440px) {
   .footer-content {
-    flex-direction: row; /* Distribuye las secciones en una fila */
-    justify-content: space-between; /* Distribuye el espacio entre las secciones */
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .footer-section {
-    width: auto; /* Permite que las secciones ocupen el espacio necesario */
+    width: auto;
   }
 
   .footer-section.middle {
-    text-align: center; /* Centra el contenido del logo */
+    text-align: center;
   }
 }
 
-/* Pantallas Ultra Grandes (1441px en adelante) */
-@media (min-width: 90.0625rem) {
-  /* 1441px = 90.0625rem */
+/* Pantallas Ultra Grandes: 1441px en adelante */
+@media (min-width: 1441px) {
   .footer-content {
-    flex-direction: row; /* Distribuye las secciones en una fila */
-    justify-content: space-between; /* Distribuye el espacio entre las secciones */
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .footer-section {
-    width: auto; /* Permite que las secciones ocupen el espacio necesario */
+    width: auto;
   }
 
   .footer-section.middle {
-    text-align: center; /* Centra el contenido del logo */
+    text-align: center;
   }
 }

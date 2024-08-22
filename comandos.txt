@@ -16,6 +16,8 @@ Arma Tu PC: ¡Desata el Poder del Gaming con Nosotros!
 
 -----------------------------------------------------------------------------
 
+/* "image": "/Final-Frontend-UTN-TM/images/img-teclado-hyperx.jpg", */
+
 url de pagina subida a github pages:
 https://illualex.github.io/Final-Frontend-UTN-TM/
 

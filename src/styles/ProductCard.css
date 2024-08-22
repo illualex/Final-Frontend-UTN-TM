@@ -1,101 +1,63 @@
-/* src/assets/styles/ProductCard.css */
-
 .product-card {
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #fff;
   text-align: center;
-  width: 100%; /* Ancho flexible */
-  max-width: 350px; /* Ancho máximo */
-  height: auto; /* Altura automática */
-  /* Opcional: Mantener una relación de aspecto consistente */
-  margin: 0 auto; /* Centra la tarjeta en su contenedor */
+  width: 100%;
+  max-width: 22rem;
+  height: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
 }
 
 .product-image {
   width: 100%;
-  height: 60%; /* Ajusta según sea necesario */
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
 }
 
 .product-info {
-  padding: 16px;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
 }
 
 .product-title {
-  font-size: 1rem; /* Ajustado para ser más flexible */
+  font-size: 1.2rem;
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .product-price {
-  color: #ff8c00; /* O el color de tu preferencia */
-  font-size: 1rem; /* Ajustado para ser más flexible */
+  color: #ff8c00;
+  font-size: 1.1rem;
   margin: 0;
-  margin-bottom: 10px; /* Espacio entre precio y botón */
+  margin-bottom: 0.625rem;
 }
 
-/* Estilos para el botón */
 .add-to-cart-button {
-  background-color: #ff8c00; /* Color de fondo del botón */
-  color: #fff; /* Color del texto del botón */
+  background-color: #ff8c00;
+  color: #fff;
   border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 1rem; /* Ajustado para ser más flexible */
+  border-radius: 0.3125rem;
+  padding: 0.625rem 1.25rem;
+  font-size: 1.1rem;
   cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: auto;
 }
 
 .add-to-cart-button:hover {
-  background-color: #e07b00; /* Color de fondo del botón al pasar el mouse */
-}
-
-/* Breakpoints para hacer la tarjeta responsive */
-@media (max-width: 425px) {
-  .product-title {
-    font-size: 0.9rem; /* Ajuste para pantallas más pequeñas */
-  }
-
-  .product-price {
-    font-size: 0.9rem; /* Ajuste para pantallas más pequeñas */
-  }
-
-  .add-to-cart-button {
-    font-size: 0.9rem; /* Ajuste para pantallas más pequeñas */
-  }
-}
-
-@media (min-width: 426px) and (max-width: 768px) {
-  .product-title {
-    font-size: 1rem; /* Ajuste para tablets */
-  }
-
-  .product-price {
-    font-size: 1rem; /* Ajuste para tablets */
-  }
-
-  .add-to-cart-button {
-    font-size: 1rem; /* Ajuste para tablets */
-  }
-}
-
-@media (min-width: 769px) {
-  .product-title {
-    font-size: 1.2rem; /* Ajuste para pantallas de laptop y mayores */
-  }
-
-  .product-price {
-    font-size: 1.1rem; /* Ajuste para pantallas de laptop y mayores */
-  }
-
-  .add-to-cart-button {
-    font-size: 1.1rem; /* Ajuste para pantallas de laptop y mayores */
-  }
+  background-color: #e07b00;
 }

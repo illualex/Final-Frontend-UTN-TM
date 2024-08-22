@@ -11,12 +11,14 @@ const ProductsPage = () => {
   };
 
   return (
-    <div className="products-page">
-      <FilterSection onFilterChange={handleFilterChange} />
-      <div className="products-section">
-        <ProductsList filter={filter} />
+    <main>
+      <div className="products-page">
+        <FilterSection onFilterChange={handleFilterChange} />
+        <div className="products-section">
+          <ProductsList filter={filter} />
+        </div>
       </div>
-    </div>
+    </main>
   );
 };
 

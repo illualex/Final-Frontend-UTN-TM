@@ -1,80 +1,19 @@
-/* src/assets/styles/ProductCarousel.css */
-
-/* Estilos generales para el Swiper con el classname product-carousel */
 .product-carousel {
   width: 100%;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
 }
 
-/* Asegúrate de que los slides se alineen correctamente */
 .product-carousel .swiper-slide {
   display: flex;
-  justify-content: center; /* Centra las tarjetas dentro del slide */
+  justify-content: center;
   align-items: center;
-  /* Ajusta el tamaño máximo del slide para que se ajuste a las tarjetas */
-  max-width: 350px; /* Aumenta el ancho máximo del slide */
-  box-sizing: border-box; /* Asegura que el padding y border se incluyan en el tamaño total */
+  box-sizing: border-box;
 }
 
-/* Estilos específicos para las tarjetas dentro del carrusel */
 .product-carousel .swiper-slide .product-card {
-  width: 100%; /* Asegura que la tarjeta ocupe todo el ancho del slide */
-  max-width: 320px; /* Aumenta el ancho máximo de la tarjeta */
-  height: 450px; /* Aumenta la altura de la tarjeta */
-  box-sizing: border-box; /* Asegura que el padding y border se incluyan en el tamaño total */
+  margin: 1rem 0;
 }
 
-/* Móviles: 320px a 425px */
-@media (min-width: 320px) and (max-width: 425px) {
-  .product-carousel .swiper-slide {
-    width: 100%; /* Ajusta el ancho del slide para móviles */
-  }
-  .product-carousel .swiper-slide .product-card {
-    max-width: 300px; /* Ajusta el ancho máximo de la tarjeta para móviles */
-    height: 400px; /* Ajusta la altura de la tarjeta para móviles */
-  }
-}
-
-/* Tablets: 426px a 768px */
-@media (min-width: 426px) and (max-width: 768px) {
-  .product-carousel .swiper-slide {
-    width: 100%; /* Ajusta el ancho del slide para tablets */
-  }
-  .product-carousel .swiper-slide .product-card {
-    max-width: 320px; /* Ajusta el ancho máximo de la tarjeta para tablets */
-    height: 450px; /* Ajusta la altura de la tarjeta para tablets */
-  }
-}
-
-/* Laptops: 769px a 1024px */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .product-carousel .swiper-slide {
-    width: calc(25% - 20px); /* Ajusta el ancho del slide para laptops, con espacio entre slides */
-  }
-  .product-carousel .swiper-slide .product-card {
-    max-width: 320px; /* Ajusta el ancho máximo de la tarjeta para laptops */
-    height: 450px; /* Ajusta la altura de la tarjeta para laptops */
-  }
-}
-
-/* Pantallas Grandes: 1025px a 1440px */
-@media (min-width: 1025px) and (max-width: 1440px) {
-  .product-carousel .swiper-slide {
-    width: calc(20% - 30px); /* Ajusta el ancho del slide para pantallas grandes, con espacio entre slides */
-  }
-  .product-carousel .swiper-slide .product-card {
-    max-width: 320px; /* Ajusta el ancho máximo de la tarjeta para pantallas grandes */
-    height: 450px; /* Ajusta la altura de la tarjeta para pantallas grandes */
-  }
-}
-
-/* Pantallas Ultra Grandes: 1441px en adelante */
-@media (min-width: 1441px) {
-  .product-carousel .swiper-slide {
-    width: calc(16% - 40px); /* Ajusta el ancho del slide para pantallas ultra grandes, con espacio entre slides */
-  }
-  .product-carousel .swiper-slide .product-card {
-    max-width: 320px; /* Ajusta el ancho máximo de la tarjeta para pantallas ultra grandes */
-    height: 450px; /* Ajusta la altura de la tarjeta para pantallas ultra grandes */
-  }
+.product-carousel .swiper-slide {
+  width: calc(6.25rem - 1.25rem);
 }

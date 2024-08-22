@@ -7,13 +7,11 @@ const useFilter = (initialFilters = { hardware: [], geek: [] }) => {
     setFilters((prevFilters) => {
       const newFilters = { ...prevFilters };
       const index = newFilters[category].indexOf(item);
-
       if (index === -1) {
         newFilters[category].push(item);
       } else {
         newFilters[category].splice(index, 1);
       }
-
       return newFilters;
     });
   };
