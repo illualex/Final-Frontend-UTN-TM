@@ -8,6 +8,15 @@ export const GlobalProvider = ({ children }) => {
     return savedItems ? JSON.parse(savedItems) : [];
   });
 
+  const [username, setUsername] = useState("");
+
+  useEffect(() => {
+    const storedUsername = sessionStorage.getItem("username");
+    if (storedUsername) {
+      setUsername(storedUsername);
+    }
+  }, []);
+
   useEffect(() => {
     if (cartItems.length > 0) {
       localStorage.setItem("cartItems", JSON.stringify(cartItems));
@@ -15,6 +24,17 @@ export const GlobalProvider = ({ children }) => {
       localStorage.removeItem("cartItems");
     }
   }, [cartItems]);
+
+  const login = (username) => {
+    sessionStorage.setItem("username", username);
+    setUsername(username);
+  };
+
+  const logout = () => {
+    sessionStorage.removeItem("username");
+    setUsername("");
+    window.location.reload();
+  };
 
   const addToCart = (product) => {
     setCartItems((prevItems) => {
@@ -69,6 +89,9 @@ export const GlobalProvider = ({ children }) => {
     <GlobalContext.Provider
       value={{
         cartItems,
+        username,
+        login,
+        logout,
         addToCart,
         removeFromCart,
         increaseQuantity,

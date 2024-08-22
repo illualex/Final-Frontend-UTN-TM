@@ -1,13 +1,18 @@
 import React, { useState } from "react";
 import "../styles/SignUpPage.css";
+import { useGlobalContext } from "../contexts/GlobalContext";
+import { useNavigate } from "react-router-dom";
 
 const SignUpPage = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const { login } = useGlobalContext();
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log({ username, password });
+    login(username);
+    navigate("/home");
   };
 
   return (

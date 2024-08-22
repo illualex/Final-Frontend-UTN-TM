@@ -7,7 +7,7 @@ const HomePage = () => {
   return (
     <main>
       <ImageCarousel />
-      <h2 className="page-heading">Nosotros Productos mas reciente</h2>
+      <h2 className="page-heading">Nuestros productos mas reciente</h2>
       <ProductCarousel />
     </main>
   );

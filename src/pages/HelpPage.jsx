@@ -318,10 +318,6 @@ const HelpPage = () => {
         <div className="form">
           <h1>Ayuda Personalizada</h1>
           <HelpForm onSuccess={handleFormSuccess} />
-
-          {formSubmitted && (
-            <p className="success">¡Formulario enviado con éxito!</p>
-          )}
         </div>
       </div>
     </main>

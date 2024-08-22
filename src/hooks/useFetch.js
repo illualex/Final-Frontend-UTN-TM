@@ -9,7 +9,6 @@ const useFetch = (url) => {
     const fetchData = async () => {
       try {
         const response = await fetch(`${import.meta.env.BASE_URL}${url}`);
-        console.log("El valor de NODE_ENV es:", process.env.NODE_ENV);
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }

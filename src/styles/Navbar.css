@@ -108,7 +108,8 @@
   justify-content: center;
 }
 
-.btn-login {
+.btn-login,
+.btn-user {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1.125rem;
@@ -123,9 +124,60 @@
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.btn-login:hover {
+.btn-login,
+.btn-user:hover {
   background-color: #171717;
   color: white;
+}
+
+.btn-login,
+.btn-user,
+svg {
+  margin-right: 8px;
+}
+
+.btn-user {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.user-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.user-dropdown {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: -5%;
+  top: 78%;
+  margin-top: 0.25rem;
+  background-color: antiquewhite;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  min-width: 10rem;
+}
+
+.user-dropdown button {
+  padding: 0.5rem 1rem;
+  text-align: left;
+  border: none;
+  background-color: transparent;
+  color: #333;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.user-dropdown button + button {
+  border-top: 1px solid #ddd;
 }
 
 .navbar-bottom {

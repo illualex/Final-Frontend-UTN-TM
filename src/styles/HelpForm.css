@@ -14,7 +14,7 @@
 
 .help-form label {
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   font-weight: bold;
   color: #333;
 }
@@ -26,7 +26,7 @@
   border: 0.0625rem solid #ddd;
   border-radius: 0.75rem;
   box-sizing: border-box;
-  margin-top: 0.5rem;
+  margin-top: 0.25rem;
   font-size: 1rem;
   transition: border-color 0.3s ease;
 }
@@ -51,8 +51,14 @@
   display: block;
 }
 
-.help-form .success {
-  color: #2ecc71;
+.help-form .success-form {
+  background-color: #dff0d8;
+  color: #3c763d;
+  padding: 1rem 2rem;
+  border: 1px solid #d6e9c6;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+  font-weight: bold;
   font-size: 1rem;
   margin-top: 1rem;
   text-align: center;

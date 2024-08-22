@@ -9,14 +9,24 @@ import {
   FaBars,
   FaBarsStaggered,
 } from "react-icons/fa6";
-
 import { useGlobalContext } from "../contexts/GlobalContext";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { getCartItemCount } = useGlobalContext();
+  const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
+  const { getCartItemCount, username, logout } = useGlobalContext();
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const toggleUserMenu = () => {
+    setIsUserMenuOpen(!isUserMenuOpen);
+  };
+
+  const handleLogout = () => {
+    logout();
+    setIsUserMenuOpen(false);
   };
 
   return (
@@ -46,10 +56,25 @@ const Navbar = () => {
                 <span className="cart-item-count">{getCartItemCount()}</span>
               )}
             </Link>
-            <Link to="/signup" className="btn-login">
-              <FaUserLarge />
-              &nbsp;Iniciar sesión
-            </Link>
+
+            {username ? (
+              <div className="user-menu">
+                <button className="btn-user" onClick={toggleUserMenu}>
+                  <FaUserLarge />
+                  &nbsp;{username}
+                </button>
+                {isUserMenuOpen && (
+                  <div className="user-dropdown">
+                    <button onClick={handleLogout}>Cerrar Sesión</button>
+                  </div>
+                )}
+              </div>
+            ) : (
+              <Link to="/signup" className="btn-login">
+                <FaUserLarge />
+                &nbsp;Iniciar sesión
+              </Link>
+            )}
           </div>
         </div>
 
