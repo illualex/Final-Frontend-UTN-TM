@@ -135,7 +135,7 @@
 /* Móviles: max 425px */
 @media (max-width: 425px) {
   .footer h2 {
-    font-size: 1.25rem; /* 20px */
+    font-size: 1.25rem;
   }
 
   .footer-content {
