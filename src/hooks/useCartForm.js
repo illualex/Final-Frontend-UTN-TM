@@ -10,7 +10,8 @@ const useCartForm = (onSubmit) => {
 
   const validate = () => {
     const newErrors = {};
-    if (!postalCode) newErrors.postalCode = "El código postal es obligatorio.";
+    if (!postalCode || isNaN(postalCode))
+      newErrors.postalCode = "El código postal debe ser un número válido.";
     if (!shipping) newErrors.shipping = "Debes seleccionar un método de envío.";
     if (!payment) newErrors.payment = "Debes seleccionar una forma de pago.";
     return newErrors;

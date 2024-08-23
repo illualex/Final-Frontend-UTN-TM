@@ -45,15 +45,17 @@ const CartSummary = ({ cartItems, onSubmit }) => {
               <label htmlFor="postal-code">Código postal:</label>
               <input
                 id="postal-code"
-                type="text"
+                type="number"
                 placeholder="Código postal"
                 value={postalCode}
                 onChange={(e) => setPostalCode(e.target.value)}
+                min="0"
               />
               {errors.postalCode && (
                 <span className="error">{errors.postalCode}</span>
               )}
             </div>
+
             <div className="shipping-options">
               <label className="shipping-option">
                 <input
