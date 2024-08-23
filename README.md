@@ -10,7 +10,18 @@ Currently, two official plugins are available:
 
 -------- Descripción --------
 - Proyecto: Creación de una pagina E-commerce venta de hardware y cosas geeks.
-- Descripción: La pagina se llama "GamerMania" donde para el armado de la pagina e-commerce use de ejemplo otras paginas similares, también se uso el método Desktop First para la creación. El despliegue de la pagina e-commerce se realizo mediante la pagina Vercel.
+- Uso y Explicación: La pagina se llama "GamerMania" donde para el armado de la pagina e-commerce use de ejemplo otras paginas similares, también se uso el método Desktop First para la creación. El despliegue de la pagina e-commerce se realizo mediante la pagina Vercel. La estructura de la pagina se realizo de forma modular para que sea mas legible y fácil de modificar mediante el uso de componentes.
+    - Se tomo en cuenta todas las consignas:
+        - Uso de useState o useEffect o GlobalContext, etc.
+        - Hacerlo Responsive para pantallas mobile a 4k.
+        - Uso de React Router Dom para navegar entre paginas.
+        - Uso de formularios en "Ayuda", "Iniciar sesión" y en el Carrito.
+        - Uso de localStorage(Carrito) o sessionStorage(Login)
+        - Uso de un fetch para mi JSON propio.
+        - Se trato de implementar los métodos de DRY, YAGNI y KISS en todas las paginas posibles.
+
+- Funciones:
+    - El apartado de "iniciar sesión" no importa el nombre de usuario y contraseña. Se colocara el usuario que se coloque en el input y este se reflejara en el navbar donde se puede cerrar sesión al apretar en el nombre.
 
 - URL Vercel: https://final-frontend-utn-tm.vercel.app/home
 
