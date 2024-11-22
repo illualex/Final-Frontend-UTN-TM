@@ -56,14 +56,14 @@
 }
 
 /* Ocultar títulos en pantallas pequeñas */
-@media (min-width: 0px) and (max-width: 425px) {
+@media (min-width: 0px) and (max-width: 768px) {
   .cart-item-table thead {
     display: none;
   }
 }
 
 /* Mostrar títulos en pantallas de tamaño tablet a mayores */
-@media (min-width: 426px) and (max-width: 768px) {
+@media (min-width: 769px) {
   .cart-item-table thead {
     display: table-header-group;
   }
